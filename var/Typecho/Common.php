@@ -936,7 +936,7 @@ EOF;
      */
     public static function gravatarUrl($mail, $size, $rating, $default, $isSecure = false)
     {
-        $url = $isSecure ? 'https://secure.gravatar.com' : 'http://www.gravatar.com';
+        $url = $isSecure ? 'https://secure.gravatar.com' : 'http://cn.gravatar.com';
         $url .= '/avatar/';
 
         if (!empty($mail)) {
