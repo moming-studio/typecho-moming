@@ -112,8 +112,9 @@ class Widget_Upload extends Widget_Abstract_Contents implements Widget_Interface
         }
 
         //获取文件名
-        $fileName = sprintf('%u', crc32(uniqid())) . '.' . $ext;
-        $path = $path . '/' . $fileName;
+        //$fileName = sprintf('%u', crc32(uniqid())) . '.' . $ext;
+        $fileName = $file['name'];
+		$path = $path . '/' . $fileName;
 
         if (isset($file['tmp_name'])) {
 
